@@ -1,5 +1,5 @@
 import React from "react";
-import "./Project.css"; // Import the CSS file
+import "./project.css"; // Import the CSS file
 import { motion } from "framer-motion";
 
 const projects = [

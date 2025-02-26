@@ -25,7 +25,7 @@ const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/api/contact', formData);
+      const response = await axios.post('https://portfolio-plek.onrender.com/api/contact', formData);
       toast.success('Message sent successfully!');
       setIsLoading(false);
       setFormData({

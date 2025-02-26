@@ -1,0 +1,96 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #dbe2ef;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* Logo */
+.nav-links a.active {
+  color: #4a90e2; /* or any color you prefer for the active link */
+  font-weight: bold;
+}
+/* Add animation to the logo */
+
+@keyframes scaleLogo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  animation: scaleLogo 2s infinite alternate;
+  padding-left: 30px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: red;
+}
+
+/* Hamburger Button (Hidden on Desktop) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #dbe2ef;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}

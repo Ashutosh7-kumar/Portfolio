@@ -1,0 +1,116 @@
+/* Skills Section Container */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 70px;
+    background: linear-gradient(135deg, #f0f4ff, #dde7ff);
+    min-height: 70vh;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  /* Skills Content */
+  .skills-content {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* Subheading */
+  .skills-subtitle {
+    font-size: 22px;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  /* Section Title */
+  .skills-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Description */
+  .skills-description {
+    font-size: 10px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Skill Card */
+  .skill-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    max-width: 150px;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+    border-color: #497D74;
+  }
+  
+  /* Skill Icon */
+  .skill-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /* Skill Name */
+  .skill-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skills-title {
+      font-size: 32px;
+    }
+    
+    .skills-description {
+      font-size: 11px;
+    }
+    
+    .skill-icon {
+      font-size: 35px;
+    }
+    
+    .skill-name {
+      font-size: 12px;
+    }
+  }
+  

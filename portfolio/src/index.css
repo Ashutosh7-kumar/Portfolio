@@ -1,0 +1,9 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  /* background: linear-gradient(135deg, #e3eaf8, #dde7ff); */
+}
+body{
+  overflow-x: hidden;
+    width: 100%;
+}

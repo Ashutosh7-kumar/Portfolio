@@ -1,0 +1,111 @@
+/* Main Container */
+.projects-container {
+  background-color: #e3eaf8; /* Soft Blue Background */
+  padding: 55px 20px;
+  text-align: center;
+}
+
+/* Inner Container */
+.projects-container2 {
+  background-color: #cdd8f2;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Title */
+.projects-title {
+  font-size: 40px; /* Increased size */
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.projects-description {
+  font-size: 11px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+/* Grid Layout */
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card Styling */
+.project-card {
+  background: linear-gradient(135deg, #5c9ead, #2a628f);
+  padding: 20px;
+  border-radius: 12px;
+  width: 310px;
+  text-align: left;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: white;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Image Styling */
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 4px solid #a9c2ea;
+}
+
+/* Title */
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Description */
+.project-description {
+  font-size: 16px;
+  color: #dce3f0;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* Tech Badge Styling */
+.project-tech {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.tech-badge:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 40px;
+  }
+  
+  .projects-description {
+    font-size: 16px;
+  }
+}

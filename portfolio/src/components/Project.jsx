@@ -4,18 +4,20 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "E-commerce Platform",
+    title: "GYM-Fitness",
     description:
-      "An e-commerce platform for selling products online. It has a user-friendly interface and is optimized for search engines.",
-    image: "/img/ecommerce.jpg", // Update with your actual image path
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
+      "An web based frontend application platform for bokking slots online. It has a user-friendly interface and is optimized for search engines.",
+    image: "/img/Fitness.png", // Update with your actual image path
+    technologies: ["HTML", "CSS", "Javascript"],
+    link: "https://gym-fitness-two.vercel.app/",
   },
   {
-    title: "Blood Donation",
+    title: "603Work_Space",
     description:
-      "A responsive Blood Donation website with secure donor registration, real-time database, smooth animations, and a user-friendly UI to connect donors with those in need.",
-    image: "/img/blood donation.jpg",
+      "A responsive Creativity flows freely at 603 The Coworking Space. As a content creator, I find the ambiance truly inspiring. smooth animations, and a user-friendly UI to donors with those in need.",
+    image: "/img/603Work.png",
     technologies: ["React", "Node.js", "MongoDB", "Bootstrap"],
+    link: "https://603work.vercel.app/",
   },
   {
     title: "Netflix Clone",

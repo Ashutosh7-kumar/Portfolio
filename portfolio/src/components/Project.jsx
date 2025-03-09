@@ -47,11 +47,13 @@ const Project = () => {
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
               <img
                 src={project.image}
                 alt={project.title}
                 className="project-image"
               />
+              </a>
               <h3 className="project-title">{project.title}</h3>
               <p className="project-description">{project.description}</p>
               <div className="project-tech">

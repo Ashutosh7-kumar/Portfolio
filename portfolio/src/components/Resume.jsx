@@ -33,7 +33,7 @@ function Resume(){
         </div>
         <div className="resume-content">
           <div className="resume-download">
-              <a href="/Ashutosh_Kumar Resume.pdf" download="Ashutosh_Kumar_Resume.pdf">
+              <a href="/AshutoshResume.pdf" download="Ashutosh_Kumar_Resume.pdf">
                 <motion.button 
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, transition: { duration: 1, delay: 0.5 } }}
